@@ -1,0 +1,13 @@
+<soap:Envelope
+	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SOAP-ENV:Header />
+	<soap:Body>
+		<GetCurrentBalanceResponse
+			xmlns="http://api.onnorokomsms.com/">
+			<GetCurrentBalanceResult>18.60000</GetCurrentBalanceResult>
+		</GetCurrentBalanceResponse>
+	</soap:Body>
+</soap:Envelope>

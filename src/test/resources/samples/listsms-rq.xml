@@ -1,0 +1,19 @@
+<S:Envelope
+	xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP-ENV:Header />
+	<S:Body>
+		<ListSms xmlns="http://api.onnorokomsms.com/">
+			<apiKey>92134</apiKey>
+			<wsSmses>
+				<WsSms>
+					<MobileNumber>01515634889</MobileNumber>
+					<SmsText>Hi Bhaiya, This is a test message from SMS API of Onnorokom SMS Service</SmsText>
+					<Type>TEXT</Type>
+				</WsSms>
+			</wsSmses>
+			<maskName />
+			<campaignName />
+		</ListSms>
+	</S:Body>
+</S:Envelope>
