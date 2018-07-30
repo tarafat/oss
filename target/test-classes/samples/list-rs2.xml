@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope
+	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<soap:Body>
+		<ListSmsResponse xmlns="http://api.onnorokomsms.com/">
+			<ListSmsResult>1900||01515634889||91006356/1900||01748562164||91006357/</ListSmsResult>
+		</ListSmsResponse>
+	</soap:Body>
+</soap:Envelope>

@@ -8,7 +8,6 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.junit.BeforeClass;
-import org.junit.Ignore;
 import org.junit.Test;
 
 import com.onnorokom.sms.v1.ArrayOfWsSms;
@@ -48,19 +47,26 @@ public class SMSTest {
 	public void testListSMS() {
 		SendSmsSoap port = OnnorkomObjectBuilder.getSMSPort(END_POINT);
 		String message = "Hi Bhaiya, This is a test message from SMS API of Onnorokom SMS Service";
-		
+
 		List<WsSms> wsSmses = new ArrayList<>();
 		WsSms wsSms = new WsSms();
 		wsSms.setMobileNumber("01515634889");
 		wsSms.setSmsText(message);
 		wsSms.setType("TEXT");
 		wsSmses.add(wsSms);
+
+		WsSms wsSms2 = new WsSms();
+		wsSms2.setMobileNumber("01748562164");
+		wsSms2.setSmsText("This is message 2");
+		wsSms2.setType("TEXT");
+		wsSmses.add(wsSms2);
+
 		ArrayOfWsSms arrayOfWsSms = new ArrayOfWsSms();
 		arrayOfWsSms.setWsSms(wsSmses);
 		port.listSms(API_KEY, arrayOfWsSms, "", "");
 	}
 
-	@Ignore("It will work after two hour of send sms")
+	//@Ignore("It will work after two hour of send sms")
 	@Test
 	public void testSMSDeliveryStatus() {
 		SendSmsSoap port = OnnorkomObjectBuilder.getSMSPort(END_POINT);
@@ -78,5 +84,18 @@ public class SMSTest {
 		SendSmsSoap port = OnnorkomObjectBuilder.getSMSPort(END_POINT);
 		String response = port.getCurrentBalance(API_KEY);
 		logger.info(response);
+	}
+
+	@Test
+	public void parseReturnValue() {
+		String value = "1900||01515634889||91006356/1900||01748562164||91006357/";
+		String[] fullSMS = value.split("/");
+		for(int i = 0; i < fullSMS.length; i++) {
+			logger.info(fullSMS[i]);
+			String[] values = fullSMS[i].split("\\|\\|");
+			for(int j = 0; j < values.length; j++) {
+				logger.info(values[j]);
+			}
+		}
 	}
 }
