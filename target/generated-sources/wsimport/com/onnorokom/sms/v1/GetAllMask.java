@@ -6,13 +6,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -29,31 +27,36 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "apiKey" })
+@XmlType(name = "", propOrder = {
+    "apiKey"
+})
 @XmlRootElement(name = "GetAllMask")
 public class GetAllMask {
 
-	protected String apiKey;
+    protected String apiKey;
 
-	/**
-	 * Gets the value of the apiKey property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getApiKey() {
-		return apiKey;
-	}
+    /**
+     * Gets the value of the apiKey property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getApiKey() {
+        return apiKey;
+    }
 
-	/**
-	 * Sets the value of the apiKey property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setApiKey(String value) {
-		this.apiKey = value;
-	}
+    /**
+     * Sets the value of the apiKey property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setApiKey(String value) {
+        this.apiKey = value;
+    }
 
 }

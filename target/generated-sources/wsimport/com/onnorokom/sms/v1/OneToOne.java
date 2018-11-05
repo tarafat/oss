@@ -6,13 +6,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -35,164 +33,192 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "userName", "userPassword", "mobileNumber", "smsText", "type", "maskName",
-		"campaignName" })
+@XmlType(name = "", propOrder = {
+    "userName",
+    "userPassword",
+    "mobileNumber",
+    "smsText",
+    "type",
+    "maskName",
+    "campaignName"
+})
 @XmlRootElement(name = "OneToOne")
 public class OneToOne {
 
-	protected String userName;
-	protected String userPassword;
-	protected String mobileNumber;
-	protected String smsText;
-	protected String type;
-	protected String maskName;
-	protected String campaignName;
+    protected String userName;
+    protected String userPassword;
+    protected String mobileNumber;
+    protected String smsText;
+    protected String type;
+    protected String maskName;
+    protected String campaignName;
 
-	/**
-	 * Gets the value of the userName property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getUserName() {
-		return userName;
-	}
+    /**
+     * Gets the value of the userName property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getUserName() {
+        return userName;
+    }
 
-	/**
-	 * Sets the value of the userName property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setUserName(String value) {
-		this.userName = value;
-	}
+    /**
+     * Sets the value of the userName property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setUserName(String value) {
+        this.userName = value;
+    }
 
-	/**
-	 * Gets the value of the userPassword property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getUserPassword() {
-		return userPassword;
-	}
+    /**
+     * Gets the value of the userPassword property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getUserPassword() {
+        return userPassword;
+    }
 
-	/**
-	 * Sets the value of the userPassword property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setUserPassword(String value) {
-		this.userPassword = value;
-	}
+    /**
+     * Sets the value of the userPassword property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setUserPassword(String value) {
+        this.userPassword = value;
+    }
 
-	/**
-	 * Gets the value of the mobileNumber property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getMobileNumber() {
-		return mobileNumber;
-	}
+    /**
+     * Gets the value of the mobileNumber property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
 
-	/**
-	 * Sets the value of the mobileNumber property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setMobileNumber(String value) {
-		this.mobileNumber = value;
-	}
+    /**
+     * Sets the value of the mobileNumber property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMobileNumber(String value) {
+        this.mobileNumber = value;
+    }
 
-	/**
-	 * Gets the value of the smsText property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getSmsText() {
-		return smsText;
-	}
+    /**
+     * Gets the value of the smsText property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getSmsText() {
+        return smsText;
+    }
 
-	/**
-	 * Sets the value of the smsText property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setSmsText(String value) {
-		this.smsText = value;
-	}
+    /**
+     * Sets the value of the smsText property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setSmsText(String value) {
+        this.smsText = value;
+    }
 
-	/**
-	 * Gets the value of the type property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getType() {
-		return type;
-	}
+    /**
+     * Gets the value of the type property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getType() {
+        return type;
+    }
 
-	/**
-	 * Sets the value of the type property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setType(String value) {
-		this.type = value;
-	}
+    /**
+     * Sets the value of the type property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setType(String value) {
+        this.type = value;
+    }
 
-	/**
-	 * Gets the value of the maskName property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getMaskName() {
-		return maskName;
-	}
+    /**
+     * Gets the value of the maskName property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getMaskName() {
+        return maskName;
+    }
 
-	/**
-	 * Sets the value of the maskName property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setMaskName(String value) {
-		this.maskName = value;
-	}
+    /**
+     * Sets the value of the maskName property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setMaskName(String value) {
+        this.maskName = value;
+    }
 
-	/**
-	 * Gets the value of the campaignName property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getCampaignName() {
-		return campaignName;
-	}
+    /**
+     * Gets the value of the campaignName property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getCampaignName() {
+        return campaignName;
+    }
 
-	/**
-	 * Sets the value of the campaignName property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setCampaignName(String value) {
-		this.campaignName = value;
-	}
+    /**
+     * Sets the value of the campaignName property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setCampaignName(String value) {
+        this.campaignName = value;
+    }
 
 }

@@ -7,13 +7,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -30,32 +28,37 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "getBalanceResult" })
+@XmlType(name = "", propOrder = {
+    "getBalanceResult"
+})
 @XmlRootElement(name = "GetBalanceResponse")
 public class GetBalanceResponse {
 
-	@XmlElement(name = "GetBalanceResult")
-	protected String getBalanceResult;
+    @XmlElement(name = "GetBalanceResult")
+    protected String getBalanceResult;
 
-	/**
-	 * Gets the value of the getBalanceResult property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getGetBalanceResult() {
-		return getBalanceResult;
-	}
+    /**
+     * Gets the value of the getBalanceResult property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getGetBalanceResult() {
+        return getBalanceResult;
+    }
 
-	/**
-	 * Sets the value of the getBalanceResult property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setGetBalanceResult(String value) {
-		this.getBalanceResult = value;
-	}
+    /**
+     * Sets the value of the getBalanceResult property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setGetBalanceResult(String value) {
+        this.getBalanceResult = value;
+    }
 
 }

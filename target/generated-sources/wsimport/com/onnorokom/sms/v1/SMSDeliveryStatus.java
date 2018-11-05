@@ -6,13 +6,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -30,53 +28,62 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "apiKey", "responseId" })
+@XmlType(name = "", propOrder = {
+    "apiKey",
+    "responseId"
+})
 @XmlRootElement(name = "SMSDeliveryStatus")
 public class SMSDeliveryStatus {
 
-	protected String apiKey;
-	protected String responseId;
+    protected String apiKey;
+    protected String responseId;
 
-	/**
-	 * Gets the value of the apiKey property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getApiKey() {
-		return apiKey;
-	}
+    /**
+     * Gets the value of the apiKey property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getApiKey() {
+        return apiKey;
+    }
 
-	/**
-	 * Sets the value of the apiKey property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setApiKey(String value) {
-		this.apiKey = value;
-	}
+    /**
+     * Sets the value of the apiKey property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setApiKey(String value) {
+        this.apiKey = value;
+    }
 
-	/**
-	 * Gets the value of the responseId property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getResponseId() {
-		return responseId;
-	}
+    /**
+     * Gets the value of the responseId property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getResponseId() {
+        return responseId;
+    }
 
-	/**
-	 * Sets the value of the responseId property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setResponseId(String value) {
-		this.responseId = value;
-	}
+    /**
+     * Sets the value of the responseId property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setResponseId(String value) {
+        this.responseId = value;
+    }
 
 }

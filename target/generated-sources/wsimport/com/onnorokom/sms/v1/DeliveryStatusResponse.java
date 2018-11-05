@@ -7,13 +7,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -30,32 +28,37 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "deliveryStatusResult" })
+@XmlType(name = "", propOrder = {
+    "deliveryStatusResult"
+})
 @XmlRootElement(name = "DeliveryStatusResponse")
 public class DeliveryStatusResponse {
 
-	@XmlElement(name = "DeliveryStatusResult")
-	protected String deliveryStatusResult;
+    @XmlElement(name = "DeliveryStatusResult")
+    protected String deliveryStatusResult;
 
-	/**
-	 * Gets the value of the deliveryStatusResult property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getDeliveryStatusResult() {
-		return deliveryStatusResult;
-	}
+    /**
+     * Gets the value of the deliveryStatusResult property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getDeliveryStatusResult() {
+        return deliveryStatusResult;
+    }
 
-	/**
-	 * Sets the value of the deliveryStatusResult property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setDeliveryStatusResult(String value) {
-		this.deliveryStatusResult = value;
-	}
+    /**
+     * Sets the value of the deliveryStatusResult property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setDeliveryStatusResult(String value) {
+        this.deliveryStatusResult = value;
+    }
 
 }

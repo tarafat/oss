@@ -8,13 +8,11 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for ArrayOfWsSms complex type.
+ * <p>Java class for ArrayOfWsSms complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType name="ArrayOfWsSms">
@@ -31,43 +29,41 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "ArrayOfWsSms", propOrder = { "wsSms" })
+@XmlType(name = "ArrayOfWsSms", propOrder = {
+    "wsSms"
+})
 public class ArrayOfWsSms {
 
-	@XmlElement(name = "WsSms", nillable = true)
-	protected List<WsSms> wsSms;
+    @XmlElement(name = "WsSms", nillable = true)
+    protected List<WsSms> wsSms;
 
-	/**
-	 * Gets the value of the wsSms property.
-	 * 
-	 * <p>
-	 * This accessor method returns a reference to the live list, not a snapshot.
-	 * Therefore any modification you make to the returned list will be present
-	 * inside the JAXB object. This is why there is not a <CODE>set</CODE> method
-	 * for the wsSms property.
-	 * 
-	 * <p>
-	 * For example, to add a new item, do as follows:
-	 * 
-	 * <pre>
-	 * getWsSms().add(newItem);
-	 * </pre>
-	 * 
-	 * 
-	 * <p>
-	 * Objects of the following type(s) are allowed in the list {@link WsSms }
-	 * 
-	 * 
-	 */
-	public List<WsSms> getWsSms() {
-		if (wsSms == null) {
-			wsSms = new ArrayList<WsSms>();
-		}
-		return this.wsSms;
-	}
-
-	public void setWsSms(List<WsSms> wsSms) {
-		this.wsSms = wsSms;
-	}
+    /**
+     * Gets the value of the wsSms property.
+     * 
+     * <p>
+     * This accessor method returns a reference to the live list,
+     * not a snapshot. Therefore any modification you make to the
+     * returned list will be present inside the JAXB object.
+     * This is why there is not a <CODE>set</CODE> method for the wsSms property.
+     * 
+     * <p>
+     * For example, to add a new item, do as follows:
+     * <pre>
+     *    getWsSms().add(newItem);
+     * </pre>
+     * 
+     * 
+     * <p>
+     * Objects of the following type(s) are allowed in the list
+     * {@link WsSms }
+     * 
+     * 
+     */
+    public List<WsSms> getWsSms() {
+        if (wsSms == null) {
+            wsSms = new ArrayList<WsSms>();
+        }
+        return this.wsSms;
+    }
 
 }

@@ -7,13 +7,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -30,32 +28,37 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "smsDeliveryStatusResult" })
+@XmlType(name = "", propOrder = {
+    "smsDeliveryStatusResult"
+})
 @XmlRootElement(name = "SMSDeliveryStatusResponse")
 public class SMSDeliveryStatusResponse {
 
-	@XmlElement(name = "SMSDeliveryStatusResult")
-	protected String smsDeliveryStatusResult;
+    @XmlElement(name = "SMSDeliveryStatusResult")
+    protected String smsDeliveryStatusResult;
 
-	/**
-	 * Gets the value of the smsDeliveryStatusResult property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getSMSDeliveryStatusResult() {
-		return smsDeliveryStatusResult;
-	}
+    /**
+     * Gets the value of the smsDeliveryStatusResult property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getSMSDeliveryStatusResult() {
+        return smsDeliveryStatusResult;
+    }
 
-	/**
-	 * Sets the value of the smsDeliveryStatusResult property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setSMSDeliveryStatusResult(String value) {
-		this.smsDeliveryStatusResult = value;
-	}
+    /**
+     * Sets the value of the smsDeliveryStatusResult property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setSMSDeliveryStatusResult(String value) {
+        this.smsDeliveryStatusResult = value;
+    }
 
 }

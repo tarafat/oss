@@ -7,13 +7,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -30,32 +28,37 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "getAllMaskResult" })
+@XmlType(name = "", propOrder = {
+    "getAllMaskResult"
+})
 @XmlRootElement(name = "GetAllMaskResponse")
 public class GetAllMaskResponse {
 
-	@XmlElement(name = "GetAllMaskResult")
-	protected String getAllMaskResult;
+    @XmlElement(name = "GetAllMaskResult")
+    protected String getAllMaskResult;
 
-	/**
-	 * Gets the value of the getAllMaskResult property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getGetAllMaskResult() {
-		return getAllMaskResult;
-	}
+    /**
+     * Gets the value of the getAllMaskResult property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getGetAllMaskResult() {
+        return getAllMaskResult;
+    }
 
-	/**
-	 * Sets the value of the getAllMaskResult property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setGetAllMaskResult(String value) {
-		this.getAllMaskResult = value;
-	}
+    /**
+     * Sets the value of the getAllMaskResult property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setGetAllMaskResult(String value) {
+        this.getAllMaskResult = value;
+    }
 
 }

@@ -7,13 +7,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -30,32 +28,37 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "getCurrentBalanceResult" })
+@XmlType(name = "", propOrder = {
+    "getCurrentBalanceResult"
+})
 @XmlRootElement(name = "GetCurrentBalanceResponse")
 public class GetCurrentBalanceResponse {
 
-	@XmlElement(name = "GetCurrentBalanceResult")
-	protected String getCurrentBalanceResult;
+    @XmlElement(name = "GetCurrentBalanceResult")
+    protected String getCurrentBalanceResult;
 
-	/**
-	 * Gets the value of the getCurrentBalanceResult property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getGetCurrentBalanceResult() {
-		return getCurrentBalanceResult;
-	}
+    /**
+     * Gets the value of the getCurrentBalanceResult property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getGetCurrentBalanceResult() {
+        return getCurrentBalanceResult;
+    }
 
-	/**
-	 * Sets the value of the getCurrentBalanceResult property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setGetCurrentBalanceResult(String value) {
-		this.getCurrentBalanceResult = value;
-	}
+    /**
+     * Sets the value of the getCurrentBalanceResult property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setGetCurrentBalanceResult(String value) {
+        this.getCurrentBalanceResult = value;
+    }
 
 }

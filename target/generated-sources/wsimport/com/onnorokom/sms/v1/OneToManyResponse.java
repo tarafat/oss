@@ -7,13 +7,11 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
+
 /**
- * <p>
- * Java class for anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>
- * The following schema fragment specifies the expected content contained within
- * this class.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
  * &lt;complexType>
@@ -30,32 +28,37 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = { "oneToManyResult" })
+@XmlType(name = "", propOrder = {
+    "oneToManyResult"
+})
 @XmlRootElement(name = "OneToManyResponse")
 public class OneToManyResponse {
 
-	@XmlElement(name = "OneToManyResult")
-	protected String oneToManyResult;
+    @XmlElement(name = "OneToManyResult")
+    protected String oneToManyResult;
 
-	/**
-	 * Gets the value of the oneToManyResult property.
-	 * 
-	 * @return possible object is {@link String }
-	 * 
-	 */
-	public String getOneToManyResult() {
-		return oneToManyResult;
-	}
+    /**
+     * Gets the value of the oneToManyResult property.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getOneToManyResult() {
+        return oneToManyResult;
+    }
 
-	/**
-	 * Sets the value of the oneToManyResult property.
-	 * 
-	 * @param value
-	 *            allowed object is {@link String }
-	 * 
-	 */
-	public void setOneToManyResult(String value) {
-		this.oneToManyResult = value;
-	}
+    /**
+     * Sets the value of the oneToManyResult property.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setOneToManyResult(String value) {
+        this.oneToManyResult = value;
+    }
 
 }

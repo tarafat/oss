@@ -38,7 +38,7 @@ public class SMSTest {
 		SendSmsSoap port = OnnorkomObjectBuilder.getSMSPort(END_POINT);
 		String message = "Hi Bhaiya, This is a test message from SMS API of Onnorokom SMS Service";
 		List<String> numbers = new ArrayList<>();
-		numbers.add("01758444444");
+		numbers.add("01515634889");
 		String value = port.numberSms(API_KEY, message, numbers.toString(), "TEXT", "", "");
 		logger.info(value);
 	}
@@ -62,7 +62,8 @@ public class SMSTest {
 		wsSmses.add(wsSms2);
 
 		ArrayOfWsSms arrayOfWsSms = new ArrayOfWsSms();
-		arrayOfWsSms.setWsSms(wsSmses);
+		arrayOfWsSms.getWsSms().add(wsSms);
+		arrayOfWsSms.getWsSms().add(wsSms2);
 		port.listSms(API_KEY, arrayOfWsSms, "", "");
 	}
 
