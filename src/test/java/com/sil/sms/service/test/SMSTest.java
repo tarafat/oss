@@ -22,8 +22,9 @@ import com.sil.onnorokomsms.service.OnnorkomObjectBuilder;
 public class SMSTest {
 
 	private static final Logger logger = Logger.getLogger(SMSTest.class);
-	private static final String END_POINT = "https://api2.onnorokomsms.com/sendsms.asmx";
-	private static final String API_KEY = "92134";
+	private static final String END_POINT = "oss.endpoint";
+	private static final String API_KEY = "oss.api.key";
+	private static SendSmsSoap port;
 
 	@BeforeClass
 	public static void beforeClass() throws Exception {
@@ -31,21 +32,21 @@ public class SMSTest {
 		System.setProperty("com.sun.xml.internal.ws.transport.http.HttpAdapter.dumpTreshold", "999999");
 		System.setProperty("com.sun.xml.internal.ws.transport.http.HttpAdapter.dump", "true");
 		System.setProperty("com.sun.xml.ws.transport.http.HttpAdapter.dumpTreshold", "999999");
+
+		port = OnnorkomObjectBuilder.getSMSPort(System.getProperty(END_POINT));
 	}
 
 	@Test
 	public void testNumberSms() {
-		SendSmsSoap port = OnnorkomObjectBuilder.getSMSPort(END_POINT);
 		String message = "Hi Bhaiya, This is a test message from SMS API of Onnorokom SMS Service";
 		List<String> numbers = new ArrayList<>();
 		numbers.add("01515634889");
-		String value = port.numberSms(API_KEY, message, numbers.toString(), "TEXT", "", "");
+		String value = port.numberSms(System.getProperty(API_KEY), message, numbers.toString(), "TEXT", "", "");
 		logger.info(value);
 	}
 
 	@Test
 	public void testListSMS() {
-		SendSmsSoap port = OnnorkomObjectBuilder.getSMSPort(END_POINT);
 		String message = "Hi Bhaiya, This is a test message from SMS API of Onnorokom SMS Service";
 
 		List<WsSms> wsSmses = new ArrayList<>();
@@ -63,15 +64,14 @@ public class SMSTest {
 
 		ArrayOfWsSms arrayOfWsSms = new ArrayOfWsSms();
 		arrayOfWsSms.getWsSms().add(wsSms);
-		arrayOfWsSms.getWsSms().add(wsSms2);
-		port.listSms(API_KEY, arrayOfWsSms, "", "");
+//		arrayOfWsSms.getWsSms().add(wsSms2);
+		port.listSms(System.getProperty(API_KEY), arrayOfWsSms, "", "");
 	}
 
 	//@Ignore("It will work after two hour of send sms")
 	@Test
 	public void testSMSDeliveryStatus() {
-		SendSmsSoap port = OnnorkomObjectBuilder.getSMSPort(END_POINT);
-		String value = port.smsDeliveryStatus(API_KEY, "90769061");
+		String value = port.smsDeliveryStatus(System.getProperty(API_KEY), "90769061");
 		logger.info(value);
 	}
 
@@ -82,8 +82,7 @@ public class SMSTest {
 	 */
 	@Test
 	public void testCheckBalance() {
-		SendSmsSoap port = OnnorkomObjectBuilder.getSMSPort(END_POINT);
-		String response = port.getCurrentBalance(API_KEY);
+		String response = port.getCurrentBalance(System.getProperty(API_KEY));
 		logger.info(response);
 	}
 
